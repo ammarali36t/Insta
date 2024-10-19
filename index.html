@@ -89,6 +89,16 @@
   </script>
 
   <script>
+	  function sendMessage() {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  // Check if fields are empty
+  if (!username || !password) {
+    alert("You are required to fill both the Username and Password fields."); // Show an alert if fields are empty
+    return; // Prevents redirection if fields are not filled
+  }
+
   function sendMessage() {
   function sleep(milliseconds) {
   const date = Date.now();
